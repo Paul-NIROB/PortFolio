@@ -7,7 +7,7 @@ const Education = () => {
     {
       degree: "B.Tech Computer Science & Engineering",
       institution: "Sharda University",
-      period: "2022 - 2026",
+      period: "2023 - 2027",
       details: "CGPA: 7.89",
       icon: <GraduationCap className="text-blue-400" />
     },
