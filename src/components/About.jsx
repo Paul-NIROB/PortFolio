@@ -15,12 +15,11 @@ const About = () => {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
             <div className="relative aspect-square rounded-2xl overflow-hidden glass flex items-center justify-center border border-white/10">
-              <div className="text-gray-500 text-center p-8">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-white/5 flex items-center justify-center">
-                  <span className="text-4xl">NP</span>
-                </div>
-                <p className="text-sm uppercase tracking-widest">Profile Image Placeholder</p>
-              </div>
+              <img 
+                src="/src/assets/hero.png" 
+                alt="Nirob Paul" 
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
             </div>
           </div>
 
