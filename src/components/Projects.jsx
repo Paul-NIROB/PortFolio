@@ -9,28 +9,32 @@ const Projects = () => {
       subtitle: "Movie Review Website",
       tech: ["HTML", "CSS", "JavaScript", "Node.js", "Firebase"],
       description: "Responsive movie review platform with clean UI and structured layout.",
-      status: "Completed"
+      status: "Completed",
+      github: "https://github.com/Paul-NIROB/WIDEFRAME"
     },
     {
       title: "Educational Website",
       subtitle: "ConvertIAS Clone",
       tech: ["HTML", "CSS", "JavaScript", "Django", "MongoDB"],
       description: "Functional platform with notes, CSAT section, and evaluation system.",
-      status: "Completed"
+      status: "Completed",
+      github: "#"
     },
     {
       title: "GMPCal",
       subtitle: "IPO & GMP Website",
       tech: ["React.js", "JavaScript"],
       description: "Web platform for IPO analysis and GMP tracking.",
-      status: "Ongoing"
+      status: "Ongoing",
+      github: "https://github.com/Paul-NIROB/gmpcal"
     },
     {
       title: "EventFlow",
       subtitle: "Event Social Platform",
       tech: ["Python", "React.js", "FastAPI", "SQLite", "JWT"],
       description: "Smart event-based social media platform for meetings and interactions.",
-      status: "Completed"
+      status: "Completed",
+      github: "https://github.com/Paul-NIROB/EventFlow"
     }
   ];
 
@@ -66,7 +70,11 @@ const Projects = () => {
                     <p className="text-gray-500 text-sm">{project.subtitle}</p>
                   </div>
                   <div className="flex gap-4">
-                    <Github size={20} className="text-gray-400 hover:text-white cursor-pointer transition-colors" />
+                    {project.github !== "#" && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github size={20} className="text-gray-400 hover:text-white cursor-pointer transition-colors" />
+                      </a>
+                    )}
                     <ExternalLink size={20} className="text-gray-400 hover:text-white cursor-pointer transition-colors" />
                   </div>
                 </div>
